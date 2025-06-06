@@ -1,0 +1,496 @@
+/* Modern CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
+  background: url('/marble-bg.jpg') center center fixed;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Better glass cards that won't block content */
+.glass-card {
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
+}
+
+.glass-card-dark {
+  background: rgba(255, 255, 255, 0.12) !important;
+  backdrop-filter: blur(30px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Fixed dropdown menu styling */
+.dropdown-menu {
+  background: rgba(0, 0, 0, 0.85) !important;
+  backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6) !important;
+}
+
+.dropdown-menu button {
+  color: white !important;
+  background: transparent !important;
+  border: none !important;
+  font-weight: 500 !important;
+}
+
+.dropdown-menu button:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: white !important;
+}
+
+.dropdown-menu button.text-red-400 {
+  color: #f87171 !important;
+}
+
+.dropdown-menu button.text-red-400:hover {
+  background: rgba(239, 68, 68, 0.15) !important;
+  color: #fca5a5 !important;
+}
+
+/* Layout */
+.min-h-screen { 
+  min-height: 100vh;
+}
+
+.container { 
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+/* Better gradient colors for marble background */
+.bg-blue-600 { 
+  background: linear-gradient(135deg, #0066cc 0%, #004499 100%) !important;
+  border: none !important;
+  color: white !important;
+}
+
+.bg-green-600 { 
+  background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
+  color: white !important;
+}
+
+.bg-red-600 { 
+  background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%) !important;
+  color: white !important;
+}
+
+.bg-gray-600 { 
+  background: linear-gradient(135deg, #4b5563 0%, #374151 100%) !important;
+  color: white !important;
+}
+
+.bg-purple-600 { 
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%) !important;
+  color: white !important;
+}
+
+/* Enhanced hover effects */
+.hover\:bg-blue-700:hover { 
+  background: linear-gradient(135deg, #004499 0%, #003366 100%) !important;
+  transform: translateY(-2px);
+}
+
+.hover\:bg-green-700:hover { 
+  background: linear-gradient(135deg, #047857 0%, #065f46 100%) !important;
+  transform: translateY(-2px);
+}
+
+.hover\:bg-red-700:hover { 
+  background: linear-gradient(135deg, #991b1b 0%, #7f1d1d 100%) !important;
+  transform: translateY(-2px);
+}
+
+.hover\:bg-gray-700:hover { 
+  background: linear-gradient(135deg, #374151 0%, #1f2937 100%) !important;
+  transform: translateY(-2px);
+}
+
+.hover\:bg-purple-700:hover { 
+  background: linear-gradient(135deg, #6d28d9 0%, #581c87 100%) !important;
+  transform: translateY(-2px);
+}
+
+.hover\:bg-gray-100:hover { 
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Better colors for credit buttons on dark marble */
+.bg-green-50 { 
+  background: rgba(16, 185, 129, 0.15) !important; 
+  color: #34d399 !important; 
+  border-color: rgba(16, 185, 129, 0.4) !important; 
+}
+.bg-blue-50 { 
+  background: rgba(59, 130, 246, 0.15) !important; 
+  color: #60a5fa !important; 
+  border-color: rgba(59, 130, 246, 0.4) !important; 
+}
+.bg-purple-50 { 
+  background: rgba(139, 92, 246, 0.15) !important; 
+  color: #a78bfa !important; 
+  border-color: rgba(139, 92, 246, 0.4) !important; 
+}
+.bg-red-50 { 
+  background: rgba(239, 68, 68, 0.15) !important; 
+  color: #f87171 !important; 
+  border-color: rgba(239, 68, 68, 0.4) !important; 
+}
+
+.hover\:bg-green-100:hover { background: rgba(16, 185, 129, 0.25) !important; }
+.hover\:bg-blue-100:hover { background: rgba(59, 130, 246, 0.25) !important; }
+.hover\:bg-purple-100:hover { background: rgba(139, 92, 246, 0.25) !important; }
+.hover\:bg-red-100:hover { background: rgba(239, 68, 68, 0.25) !important; }
+
+/* Text colors optimized for marble background */
+.text-white { color: #ffffff !important; }
+.text-gray-400 { color: #d1d5db !important; }
+.text-gray-500 { color: #9ca3af !important; }
+.text-gray-600 { color: #6b7280 !important; }
+.text-gray-700 { color: #374151 !important; }
+.text-gray-900 { color: #111827 !important; }
+.text-blue-600 { color: #60a5fa !important; }
+.text-green-600 { color: #34d399 !important; }
+.text-purple-600 { color: #a78bfa !important; }
+.text-yellow-600 { color: #fbbf24 !important; }
+.text-red-600 { color: #f87171 !important; }
+.text-red-400 { color: #f87171 !important; }
+
+.hover\:text-blue-600:hover { color: #60a5fa !important; }
+
+/* Typography */
+.text-xs { font-size: 0.75rem; line-height: 1rem; }
+.text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+.text-base { font-size: 1rem; line-height: 1.5rem; }
+.text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+.text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+.text-2xl { font-size: 1.5rem; line-height: 2rem; }
+.text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+.text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+.text-5xl { font-size: 3rem; line-height: 1; }
+.text-6xl { font-size: 3.75rem; line-height: 1; }
+.text-7xl { font-size: 4.5rem; line-height: 1; }
+.text-8xl { font-size: 6rem; line-height: 1; }
+
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+
+/* Flexbox */
+.flex { display: flex; }
+.flex-1 { flex: 1 1 0%; }
+.flex-col { flex-direction: column; }
+.items-start { align-items: flex-start; }
+.items-center { align-items: center; }
+.items-end { align-items: flex-end; }
+.justify-start { justify-content: flex-start; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-end { justify-content: flex-end; }
+
+/* Grid */
+.grid { display: grid; }
+.grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+.grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+/* Spacing */
+.space-x-2 > * + * { margin-left: 0.5rem; }
+.space-x-3 > * + * { margin-left: 0.75rem; }
+.space-x-4 > * + * { margin-left: 1rem; }
+.space-x-6 > * + * { margin-left: 1.5rem; }
+.space-x-8 > * + * { margin-left: 2rem; }
+
+.space-y-4 > * + * { margin-top: 1rem; }
+.space-y-6 > * + * { margin-top: 1.5rem; }
+.space-y-8 > * + * { margin-top: 2rem; }
+.space-y-12 > * + * { margin-top: 3rem; }
+
+.gap-6 { gap: 1.5rem; }
+.gap-8 { gap: 2rem; }
+.gap-12 { gap: 3rem; }
+
+/* Padding */
+.p-4 { padding: 1rem; }
+.p-6 { padding: 1.5rem; }
+.p-8 { padding: 2rem; }
+.p-12 { padding: 3rem; }
+
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+.px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+.px-8 { padding-left: 2rem; padding-right: 2rem; }
+.px-12 { padding-left: 3rem; padding-right: 3rem; }
+
+.py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+.py-6 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+.py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+.py-12 { padding-top: 3rem; padding-bottom: 3rem; }
+
+.pl-16 { padding-left: 4rem; }
+
+/* Margin */
+.mx-auto { margin-left: auto; margin-right: auto; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.mb-8 { margin-bottom: 2rem; }
+.mb-12 { margin-bottom: 3rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 0.75rem; }
+.mt-4 { margin-top: 1rem; }
+.mr-2 { margin-right: 0.5rem; }
+
+/* Borders */
+.border { border-width: 1px; border-color: rgba(255, 255, 255, 0.2) !important; }
+.border-2 { border-width: 2px; }
+.border-t { border-top-width: 1px; }
+.border-gray-200 { border-color: rgba(255, 255, 255, 0.2) !important; }
+.border-gray-300 { border-color: rgba(255, 255, 255, 0.3) !important; }
+.border-white\/20 { border-color: rgba(255, 255, 255, 0.2) !important; }
+
+/* Border Radius */
+.rounded-lg { border-radius: 0.75rem; }
+.rounded-xl { border-radius: 1rem; }
+.rounded-2xl { border-radius: 1.5rem; }
+.rounded-3xl { border-radius: 2rem; }
+.rounded-full { border-radius: 9999px; }
+
+/* Shadows optimized for dark background */
+.shadow-sm { box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); }
+.shadow { box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); }
+.shadow-lg { box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); }
+.shadow-xl { box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4); }
+.shadow-2xl { box-shadow: 0 24px 64px rgba(0, 0, 0, 0.5); }
+
+.hover\:shadow-lg:hover { box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35); }
+.hover\:shadow-xl:hover { box-shadow: 0 20px 56px rgba(0, 0, 0, 0.45); }
+
+/* Smooth transitions */
+.transition-all {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Transform */
+.transform { transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1); }
+.hover\:scale-105:hover { transform: scale(1.02); }
+.hover\:-translate-y-1:hover { transform: translateY(-2px); }
+
+/* Positioning */
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+.inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
+.top-1\/2 { top: 50%; }
+.right-0 { right: 0; }
+.-top-2 { top: -0.5rem; }
+.-right-2 { right: -0.5rem; }
+.z-10 { z-index: 10; }
+.z-20 { z-index: 20; }
+.z-50 { z-index: 50; }
+
+/* Sizing */
+.w-4 { width: 1rem; }
+.w-5 { width: 1.25rem; }
+.w-6 { width: 1.5rem; }
+.w-8 { width: 2rem; }
+.w-12 { width: 3rem; }
+.w-16 { width: 4rem; }
+.w-20 { width: 5rem; }
+.w-24 { width: 6rem; }
+.w-32 { width: 8rem; }
+.w-56 { width: 14rem; }
+.w-full { width: 100%; }
+
+.h-4 { height: 1rem; }
+.h-5 { height: 1.25rem; }
+.h-6 { height: 1.5rem; }
+.h-8 { height: 2rem; }
+.h-12 { height: 3rem; }
+.h-16 { height: 4rem; }
+.h-20 { height: 5rem; }
+.h-24 { height: 6rem; }
+.h-32 { height: 8rem; }
+.h-48 { height: 12rem; }
+
+.max-w-3xl { max-width: 48rem; }
+.min-w-0 { min-width: 0; }
+.min-w-\[200px\] { min-width: 200px; }
+
+/* Display */
+.hidden { display: none; }
+.block { display: block; }
+.inline-flex { display: inline-flex; }
+
+/* Text */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.uppercase { text-transform: uppercase; }
+
+/* Utilities */
+.cursor-pointer { cursor: pointer; }
+.opacity-50 { opacity: 0.5; }
+.overflow-hidden { overflow: hidden; }
+.resize-none { resize: none; }
+.-translate-y-1\/2 { transform: translateY(-50%); }
+
+/* Form elements with better visibility */
+button {
+  cursor: pointer;
+  border: none !important;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 1rem;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+  backdrop-filter: blur(10px);
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none !important;
+  border-color: #60a5fa !important;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.3) !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+}
+
+select option {
+  background: #1f2937 !important;
+  color: white !important;
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Better gradient text for marble background */
+.gradient-text {
+  background: linear-gradient(135deg, #ab9543 0%, #8d7a04 50%, #b08210 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animations */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+  .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sm\:flex-row { flex-direction: row; }
+  .sm\:items-center { align-items: center; }
+  .sm\:space-y-0 > * + * { margin-top: 0; }
+  .sm\:space-x-4 > * + * { margin-left: 1rem; }
+  .sm\:text-2xl { font-size: 1.5rem; line-height: 2rem; }
+  .sm\:text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+  .sm\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .md\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .lg\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .lg\:flex-row { flex-direction: row; }
+  .lg\:items-center { align-items: center; }
+  .lg\:justify-between { justify-content: space-between; }
+  .lg\:space-y-0 > * + * { margin-top: 0; }
+  .lg\:space-x-6 > * + * { margin-left: 1.5rem; }
+  .lg\:text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+  .lg\:text-6xl { font-size: 3.75rem; line-height: 1; }
+}
+
+/* Modal backdrop */
+.bg-black\/60 { background-color: rgba(0, 0, 0, 0.6); }
+.backdrop-blur-sm { backdrop-filter: blur(4px); }
+
+/* Override any remaining white backgrounds */
+* {
+  color: inherit;
+}
+
+/* Ensure all dropdowns have dark styling */
+[class*="dropdown"] {
+  background: rgba(0, 0, 0, 0.85) !important;
+  backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+[class*="dropdown"] * {
+  color: white !important;
+}
+
+/* Remove any white backgrounds that might be inherited */
+div[class*="bg-white"] {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
